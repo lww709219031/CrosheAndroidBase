@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--常用的广告栏布局-->
+<FrameLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+             xmlns:app = "http://schemas.android.com/apk/res-auto"
+             android:layout_width = "match_parent"
+             android:layout_height = "match_parent"
+             android:orientation = "vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id = "@+id/android_base_advertViewPager"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent" >
+
+    </android.support.v4.view.ViewPager >
+
+    <com.rd.PageIndicatorView
+        android:id = "@+id/android_base_pageIndicatorView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center_horizontal|bottom"
+        android:layout_margin = "10dp"
+        app:piv_animationType = "worm"
+        app:piv_interactiveAnimation = "true"
+        app:piv_viewPager = "@id/android_base_advertViewPager" />
+
+</FrameLayout >

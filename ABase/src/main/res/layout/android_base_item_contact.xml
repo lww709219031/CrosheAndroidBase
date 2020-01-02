@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "match_parent"
+              android:layout_height = "wrap_content"
+              android:orientation = "vertical" >
+
+    <FrameLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background = "#fff" >
+
+        <LinearLayout
+            android:id = "@+id/llItem"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:background = "?attr/selectableItemBackground"
+            android:clickable = "true"
+            android:gravity = "center_vertical"
+            android:orientation = "horizontal"
+            android:padding = "10dp" >
+
+            <CheckBox
+                android:id = "@+id/checkbox"
+                android:layout_width = "40dp"
+                android:layout_height = "match_parent"
+                android:visibility = "gone" />
+
+            <ImageView
+                android:id = "@+id/userHeadImg"
+                android:layout_width = "40dp"
+                android:layout_height = "40dp"
+                android:scaleType = "centerCrop"
+                android:src = "@drawable/android_base_ic_default_contact_head"
+            />
+
+            <LinearLayout android:layout_width = "wrap_content"
+                          android:layout_height = "wrap_content"
+                          android:orientation = "vertical"
+                          android:paddingLeft = "10dp" >
+                <TextView
+                    android:id = "@+id/android_base_tvTitle"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:gravity = "center_vertical"
+                    android:text = "名称"
+                    android:textColor = "#303030"
+                    android:textSize = "16dp" />
+
+                <TextView android:id = "@+id/android_base_tvSubtitle"
+                          android:layout_marginTop="5dp"
+                          android:layout_width = "wrap_content"
+                          android:layout_height = "wrap_content"
+                          android:text = "子标题" />
+            </LinearLayout >
+
+        </LinearLayout >
+    </FrameLayout >
+
+</LinearLayout >

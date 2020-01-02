@@ -1,0 +1,50 @@
+include ':BaseZxing', ':ABase', ':TestApp', ':BaseMap', ':BaseEasemob', ':BaseMediaRecord', ':BaseLink', ':BasePush', ':BaseMediaPlayer', ':BaseVideoCache', ':BaseReader', ':BaseRelation', ':BaseNavigation', ':BaseEasemobAV', ':BaseEasemob@Lib', ':BaseChat'
+
+include':CrosheMaster'
+project(':CrosheMaster').projectDir=new File('/Volumes/JanesenDisk_Work/WorkSpace/space_android_studio_croshe/CrosheMaster')
+include':CrosheMaster:CrosheDaemon'  //公司的公共库
+include':CrosheMaster:CrosheChat'
+
+
+Properties properties = new Properties()
+File propertyFile = new File(rootDir.getAbsolutePath() + "/gradle.properties")
+properties.load(propertyFile.newDataInputStream())
+
+Set<Object> allProperties = properties.keySet();
+
+Map<String, HashMap<String, String>> projects = new HashMap<>()
+
+Map<String, Object> croshe = new HashMap<>()
+for (String property : allProperties) {
+    String value = properties.getProperty(property);
+    if (property.contains("@")) {
+        String projectName = ":" + property.split("@")[0];
+        String attrName = property.split("@")[1];
+        if (!projects.containsKey(projectName)) {
+            projects.put(projectName, new HashMap<String, String>());
+        }
+        projects.get(projectName).put(attrName.toLowerCase(), value);
+    } else if (property.contains("&")) {
+        String attrName = property.split("&")[1];
+        croshe.put(attrName, value)
+    }
+}
+gradle.ext.putAt("croshe", croshe)
+
+for (String property : projects.keySet()) {
+    String model = projects.get(property).get("model");
+
+    String[] models = model.split("\\|");
+    for (String m : models) {
+        gradle.ext.putAt(m, property + ":" + m);
+        File modelLibFile=new File(rootDir.getAbsolutePath(),m+"@Lib");
+        if(modelLibFile.exists()){
+            gradle.ext.putAt(m, property + ":" + m+"@Lib");
+            gradle.ext.putAt(m+"Source", property + ":" + m);
+            include(property + ":" + m+"@Lib")
+        }
+
+    }
+}
+
+

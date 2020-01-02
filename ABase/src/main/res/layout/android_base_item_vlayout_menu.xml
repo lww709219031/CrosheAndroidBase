@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:gravity = "center"
+              android:orientation = "horizontal" >
+    <View android:id = "@+id/android_base_leftLineView"
+          android:layout_width = "1dp"
+          android:layout_height = "match_parent"
+          android:background = "#ccc" />
+
+    <LinearLayout android:layout_width = "0dp"
+                  android:layout_height = "match_parent"
+                  android:layout_weight = "1"
+                  android:orientation = "vertical" >
+
+        <View android:id = "@+id/android_base_topLineView"
+              android:layout_width = "match_parent"
+              android:layout_height = "1dp"
+              android:background = "#ccc" />
+        <FrameLayout android:layout_width = "match_parent"
+                     android:layout_height = "match_parent"
+                     android:layout_gravity = "center" >
+            <LinearLayout
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
+                android:gravity = "center"
+                android:orientation = "vertical"
+                android:padding = "10dp" >
+
+                <FrameLayout android:layout_width = "wrap_content"
+                             android:layout_height = "wrap_content" >
+
+                    <ImageView android:id = "@+id/android_base_leftImgIcon"
+                               android:layout_width = "30dp"
+                               android:layout_gravity="center"
+                               android:layout_height = "30dp"
+                               android:scaleType = "centerCrop"
+                               android:layout_margin="10dp"
+                               android:src = "@drawable/android_base_default_img" />
+                    <TextView android:id = "@+id/android_base_tvNumber"
+                              android:layout_width = "20dp"
+                              android:layout_height = "20dp"
+                              android:layout_gravity = "right|top"
+                              android:background = "@drawable/android_base_border_oval_red_number"
+                              android:gravity = "center"
+                              android:text = "99"
+                              android:textColor = "#fff"
+                              android:textSize = "10dp"
+                              android:textStyle = "bold" />
+                </FrameLayout >
+                <TextView android:id = "@+id/android_base_tvTitle"
+                          android:layout_width = "wrap_content"
+                          android:layout_height = "wrap_content"
+                          android:gravity = "center"
+                          android:text = "标题名称"
+                          android:textColor = "#444"
+                          android:textSize = "16dp" />
+
+                <TextView android:id = "@+id/android_base_tvSubtitle"
+                          android:layout_width = "wrap_content"
+                          android:layout_height = "wrap_content"
+                          android:layout_marginTop = "5dp"
+                          android:gravity = "center"
+                          android:text = "子标题"
+                          android:textColor = "#ccc"
+                          android:textSize = "14dp" />
+            </LinearLayout >
+
+
+        </FrameLayout >
+        <View android:id = "@+id/bottomLineView"
+              android:layout_width = "match_parent"
+              android:layout_height = "1dp"
+              android:background = "#ccc" />
+
+    </LinearLayout >
+    <View android:id = "@+id/rightLineView"
+          android:layout_width = "1dp"
+          android:layout_height = "match_parent"
+          android:background = "#ccc" />
+</LinearLayout >

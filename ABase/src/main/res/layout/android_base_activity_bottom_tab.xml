@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "#fff" >
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation = "vertical" >
+        <com.croshe.android.base.views.control.CrosheViewPager
+            android:id = "@+id/android_base_viewPager"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight = "1" >
+
+        </com.croshe.android.base.views.control.CrosheViewPager >
+
+        <View android:layout_width = "match_parent"
+              android:layout_weight="0"
+              android:background="#444"
+              android:id="@+id/tabLine"
+              android:layout_height = "0.5dp"/>
+        <me.majiajie.pagerbottomtabstrip.PageBottomTabLayout
+            android:id = "@+id/pageBottomTabLayout"
+            android:layout_width = "match_parent"
+            android:layout_height = "56dp"
+            android:elevation = "8dp"
+        />
+    </LinearLayout >
+</android.support.design.widget.CoordinatorLayout >

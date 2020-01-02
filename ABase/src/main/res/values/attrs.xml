@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <declare-styleable name = "CrosheWaveSideBarView" >
+        <attr name = "sidebarTextColor"
+              format = "color|reference" />
+        <attr name = "sidebarBackgroundColor"
+              format = "color|reference" />
+        <attr name = "sidebarChooseTextColor"
+              format = "color|reference" />
+        <attr name = "sidebarTextSize"
+              format = "dimension" />
+        <attr name = "sidebarLargeTextSize"
+              format = "dimension" />
+        <attr name = "sidebarRadius"
+              format = "dimension" />
+        <attr name = "sidebarBallRadius"
+              format = "dimension" />
+    </declare-styleable >
+
+
+    <declare-styleable name = "CrosheHMenuLayout" >
+        <attr name = "hmenu_leftIcon"
+              format = "reference" />
+
+        <attr name = "hmenu_text"
+              format = "string|reference" />
+
+        <attr name = "hmenu_textSize"
+              format = "dimension" />
+
+        <attr name = "hmenu_textColor"
+              format = "color|reference" />
+
+        <attr name = "hmenu_subtext"
+              format = "string|reference" />
+
+        <attr name = "hmenu_subtextSize"
+              format = "dimension" />
+
+        <attr name = "hmenu_subtextColor"
+              format = "color|reference" />
+
+        <attr name = "hmenu_rightIcon"
+              format = "integer|reference" />
+
+        <attr name = "hmenu_rightIconHidden"
+              format = "boolean" />
+
+        <attr name = "hmenu_leftIconHidden"
+              format = "boolean" />
+
+        <attr name = "hmenu_rightIconColor"
+              format = "color|reference" />
+
+        <attr name = "hmenu_tipNumber"
+              format = "string|reference" />
+
+        <attr name = "hmenu_topLineWidth"
+              format = "dimension" />
+
+        <attr name = "hmenu_bottomLineWidth"
+              format = "dimension" />
+
+        <attr name = "hmenu_leftLineWidth"
+              format = "dimension" />
+
+        <attr name = "hmenu_rightLineWidth"
+              format = "dimension" />
+
+        <attr name = "hmenu_hLineMargin"
+              format = "dimension" />
+
+        <attr name = "hmenu_vLineMargin"
+              format = "dimension" />
+
+        <attr name = "hmenu_lineMarginTop"
+              format = "dimension" />
+
+        <attr name = "hmenu_lineMarginLeft"
+              format = "dimension" />
+
+        <attr name = "hmenu_lineMarginBottom"
+              format = "dimension" />
+
+        <attr name = "hmenu_lineMarginRight"
+              format = "dimension" />
+
+        <attr name = "hmenu_lineColor"
+              format = "color|reference" />
+    </declare-styleable >
+
+
+    <declare-styleable name = "CrosheVMenuLayout" >
+        <attr name = "vmenu_topIcon"
+              format = "reference" />
+
+        <attr name = "vmenu_topIconWidth"
+              format = "dimension" />
+
+        <attr name = "vmenu_topIconHeight"
+              format = "dimension" />
+
+
+        <attr name = "vmenu_text"
+              format = "string|reference" />
+
+        <attr name = "vmenu_textSize"
+              format = "dimension" />
+
+        <attr name = "vmenu_textColor"
+              format = "color|reference" />
+
+        <attr name = "vmenu_subtext"
+              format = "string|reference" />
+
+        <attr name = "vmenu_subtextSize"
+              format = "dimension" />
+
+        <attr name = "vmenu_subtextColor"
+              format = "color|reference" />
+
+        <attr name = "vmenu_tipNumber"
+              format = "string|reference" />
+
+        <attr name = "vmenu_topLineWidth"
+              format = "dimension" />
+
+        <attr name = "vmenu_bottomLineWidth"
+              format = "dimension" />
+
+        <attr name = "vmenu_leftLineWidth"
+              format = "dimension" />
+
+        <attr name = "vmenu_rightLineWidth"
+              format = "dimension" />
+
+        <attr name = "vmenu_hLineMargin"
+              format = "dimension" />
+
+        <attr name = "vmenu_vLineMargin"
+              format = "dimension" />
+
+        <attr name = "vmenu_lineMarginTop"
+              format = "dimension" />
+
+        <attr name = "vmenu_lineMarginLeft"
+              format = "dimension" />
+
+        <attr name = "vmenu_lineMarginBottom"
+              format = "dimension" />
+
+        <attr name = "vmenu_lineMarginRight"
+              format = "dimension" />
+
+        <attr name = "vmenu_lineColor"
+              format = "color|reference" />
+    </declare-styleable >
+
+
+    <declare-styleable name = "CrosheRoundLayout" >
+        <attr name = "round_radius"
+              format = "dimension" />
+
+        <attr name = "round_leftTopRadius"
+              format = "dimension" />
+
+        <attr name = "round_leftBottomRadius"
+              format = "dimension" />
+
+        <attr name = "round_rightTopRadius"
+              format = "dimension" />
+
+        <attr name = "round_rightBottomRadius"
+              format = "dimension" />
+
+        <attr name = "round_strokeWidth"
+              format = "dimension" />
+
+        <attr name = "round_strokeColor"
+              format = "color|reference" />
+
+    </declare-styleable >
+
+
+    <declare-styleable name = "CrosheGridLayout" >
+        <attr name = "grid_vCount"
+              format = "integer" />
+
+        <attr name = "grid_hCount"
+              format = "integer" />
+
+        <attr name = "grid_hLineWidth"
+              format = "dimension" />
+
+        <attr name = "grid_vLineWidth"
+              format = "dimension" />
+
+        <attr name = "grid_lineColor"
+              format = "color|reference" />
+
+
+    </declare-styleable >
+
+    <declare-styleable name = "CrosheBubbleLayout" >
+        <attr name = "bubble_arrowDirection"
+              format = "integer" />
+
+        <attr name = "bubble_arrowPosition"
+              format = "dimension" />
+
+        <attr name = "bubble_arrowWidth"
+              format = "dimension" />
+
+        <attr name = "bubble_arrowHeight"
+              format = "dimension" />
+
+        <attr name = "bubble_strokeColor"
+              format = "color|reference" />
+
+        <attr name = "bubble_bubbleColor"
+              format = "color|reference" />
+
+        <attr name = "bubble_strokeWidth"
+              format = "dimension" />
+
+        <attr name = "bubble_radius"
+              format = "dimension" />
+
+    </declare-styleable >
+
+
+    <declare-styleable name = "CrosheAdvertViewPageLayout" >
+        <attr name = "dot_selectColor"
+              format = "color|reference" />
+
+        <attr name = "dot_unSelectColor"
+              format = "color|reference" />
+    </declare-styleable >
+
+    <declare-styleable name = "CrosheTabBarLayout" >
+        <attr name = "tabBar_fullscreen"
+              format = "boolean" />
+
+        <attr name = "tabBar_light"
+              format = "boolean" />
+
+        <attr name = "tabBar_lineColor"
+              format = "color|reference" />
+
+        <attr name = "tabBar_lineWidth"
+              format = "dimension" />
+
+        <attr name = "tabBar_title"
+              format = "string|reference" />
+
+        <attr name = "tabBar_titleColor"
+              format = "color|reference" />
+
+        <attr name = "tabBar_titleAlignLeft"
+              format = "boolean" >
+
+        </attr >
+
+        <attr name = "tabBar_titleFontSize"
+              format = "dimension" />
+
+        <attr name = "tabBar_navigationIcon"
+              format = "reference" />
+
+        <attr name = "tabBar_navigationIconColor"
+              format = "color|reference" />
+
+    </declare-styleable >
+
+
+    <declare-styleable name = "CrosheCheckGroupLayout" >
+        <attr name = "checkGroup_multiCheck"
+              format = "boolean" />
+
+    </declare-styleable >
+
+
+    <declare-styleable name = "CrosheGridPagerLayout" >
+        <attr name = "grid_columnCount"
+              format = "integer" />
+
+        <attr name = "grid_rowCount"
+              format = "integer" />
+
+        <attr name = "grid_selectColor"
+              format = "color|reference" />
+
+        <attr name = "grid_unSelectColor"
+              format = "color|reference" />
+
+    </declare-styleable >
+
+
+    <declare-styleable name = "CrosheMaxSizeFrameLayout" >
+        <attr name = "maxHeight"
+              format = "dimension" />
+        <attr name = "maxWidth"
+              format = "dimension" />
+    </declare-styleable >
+
+
+</resources >

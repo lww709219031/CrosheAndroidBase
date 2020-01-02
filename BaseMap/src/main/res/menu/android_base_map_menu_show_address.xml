@@ -1,0 +1,12 @@
+<menu xmlns:android = "http://schemas.android.com/apk/res/android"
+      xmlns:app = "http://schemas.android.com/apk/res-auto"
+      xmlns:tools = "http://schemas.android.com/tools"
+      tools:context = "com.croshe.message.activity.MainActivity" >
+
+    <item
+        android:id = "@+id/android_base_more"
+        android:title = "更多"
+        android:icon="@drawable/android_base_ic_more"
+        app:showAsAction = "ifRoom" />
+
+</menu >

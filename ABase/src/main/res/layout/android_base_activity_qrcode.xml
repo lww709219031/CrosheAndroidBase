@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent" >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:theme = "@style/AndroidBaseAppTheme.AppBarOverlay" >
+
+        <android.support.v7.widget.Toolbar
+            android:id = "@+id/toolbar"
+            android:layout_width = "match_parent"
+            android:layout_height = "?attr/actionBarSize"
+            android:background = "?attr/colorPrimary"
+            app:navigationIcon = "@drawable/android_base_ic_back" >
+
+            <LinearLayout android:layout_width = "match_parent"
+                          android:layout_height = "match_parent"
+                          android:orientation = "horizontal" >
+                <TextView android:id = "@+id/tv_tab_title"
+                          android:layout_width = "wrap_content"
+                          android:layout_height = "match_parent"
+                />
+
+                <View android:layout_width = "0dp"
+                      android:layout_height = "0dp"
+                      android:layout_weight = "1" />
+                <android.support.v7.widget.AppCompatImageView
+                    android:id = "@+id/android_base_imgMore"
+                    android:layout_width = "55dp"
+                    android:layout_height = "match_parent"
+                    android:background = "?actionBarItemBackground"
+                    android:clickable = "true"
+                    android:padding = "15dp"
+                    android:src = "@drawable/android_base_ic_more"
+                    android:tint = "@color/colorTitle" />
+
+
+            </LinearLayout >
+
+        </android.support.v7.widget.Toolbar >
+
+    </android.support.design.widget.AppBarLayout >
+
+
+    <FrameLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "#f0f0f0"
+        app:layout_behavior = "@string/appbar_scrolling_view_behavior" >
+
+
+        <android.support.v7.widget.CardView
+            android:id = "@+id/android_base_qrCard"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:background = "#fff"
+            android:clipChildren = "true"
+            app:cardCornerRadius = "10dp"
+            app:cardElevation = "5dp"
+            app:cardPreventCornerOverlap = "true"
+            app:cardUseCompatPadding = "true" >
+
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity = "center"
+                android:orientation = "vertical" >
+                <TextView android:id = "@+id/android_base_tvQRTitle"
+                          android:layout_width = "wrap_content"
+                          android:layout_height = "wrap_content"
+                          android:layout_marginTop = "20dp"
+                          android:textColor = "@color/colorPrimary"
+                          android:textSize = "18dp" />
+                <ImageView
+                    android:id = "@+id/android_base_imgQRCode"
+                    android:layout_width = "250dp"
+                    android:layout_height = "250dp"
+                    android:scaleType="fitXY"
+                    android:src = "@drawable/android_base_ic_qrcode" />
+
+                <TextView android:id = "@+id/android_base_tvQRSubtitle"
+                          android:layout_width = "wrap_content"
+                          android:layout_height = "wrap_content"
+                          android:textColor = "#ccc"
+                          android:textSize = "14dp" />
+
+                <View android:layout_width = "100dp"
+                      android:layout_height = "0.5dp"
+                      android:layout_marginTop = "20dp"
+                      android:background = "#dfdfdf" />
+                <LinearLayout android:layout_width = "wrap_content"
+                              android:layout_height = "wrap_content"
+                              android:layout_marginBottom = "15dp"
+                              android:layout_marginTop = "10dp"
+                              android:gravity = "center"
+                              android:orientation = "horizontal" >
+                    <ImageView android:layout_width = "15dp"
+                               android:layout_height = "15dp"
+                               android:id="@+id/android_base_imgLogo" />
+                    <TextView android:id = "@+id/android_base_tvAppName"
+                              android:layout_width = "wrap_content"
+                              android:layout_marginLeft="8dp"
+                              android:layout_height = "wrap_content"
+                              android:text = "@string/app_name"
+                              android:textColor = "@color/colorAccent"
+                              android:textSize = "12dp" />
+                </LinearLayout >
+            </LinearLayout >
+
+        </android.support.v7.widget.CardView >
+
+    </FrameLayout >
+
+
+</android.support.design.widget.CoordinatorLayout >

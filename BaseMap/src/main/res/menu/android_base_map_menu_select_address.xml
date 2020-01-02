@@ -1,0 +1,19 @@
+<menu xmlns:android = "http://schemas.android.com/apk/res/android"
+      xmlns:app = "http://schemas.android.com/apk/res-auto"
+      xmlns:tools = "http://schemas.android.com/tools"
+      tools:context = "com.croshe.message.activity.MainActivity" >
+
+    <item
+        android:id = "@+id/android_base_location_search"
+        android:title = "搜索"
+        app:actionViewClass = "android.support.v7.widget.SearchView"
+        app:showAsAction = "ifRoom" />
+
+
+    <item
+        android:id = "@+id/android_base_ok"
+        android:title = "确定"
+        android:icon="@drawable/android_base_ic_ok"
+        app:showAsAction = "ifRoom" />
+
+</menu >

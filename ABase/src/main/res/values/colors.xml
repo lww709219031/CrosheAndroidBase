@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <color name = "colorPrimary" >#2209ff</color >
+    <color name = "colorAccent" >#df5723</color >
+
+    <color name = "colorAccentEnabled" >#e9a990</color >
+
+    <!--默认标题颜色-->
+    <color name = "colorTitle" >#ffffff</color >
+    <color name = "colorSubTitle" >#99ffffff</color >
+
+    <!--红包标题的颜色-->
+    <color name = "colorRedTitle" >#ffc800</color >
+
+    <color name = "transparent">#00000000</color>
+</resources >

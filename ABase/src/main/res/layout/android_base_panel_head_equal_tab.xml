@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical" >
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id = "@+id/android_base_tabLayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "50dp"
+        android:layout_gravity = "center"
+        app:tl_indicator_color = "@color/colorAccent"
+        app:tl_indicator_height = "2dp"
+        app:tl_textAllCaps = "true"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor = "@color/colorAccent"
+        app:tl_textUnselectColor = "#444"
+        app:tl_textsize = "18dp" />
+
+
+    <com.croshe.android.base.views.control.CrosheViewPager
+        android:id = "@+id/android_base_viewPager"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "1" >
+
+    </com.croshe.android.base.views.control.CrosheViewPager >
+
+</LinearLayout >

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <item type="id" name="android_base_tabTitle"/>
+    <item type="id" name="android_base_grid_pager"/>
+    <item type="id" name="navigation_icon"/>
+
+</resources >

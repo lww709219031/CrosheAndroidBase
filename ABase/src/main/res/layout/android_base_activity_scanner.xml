@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent" >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:theme = "@style/AndroidBaseAppTheme.AppBarOverlay" >
+
+        <android.support.v7.widget.Toolbar
+            android:id = "@+id/toolbar"
+            android:layout_width = "match_parent"
+            android:layout_height = "?attr/actionBarSize"
+            android:background = "?attr/colorPrimary"
+            app:navigationIcon = "@drawable/android_base_ic_back"
+            app:popupTheme = "@style/AndroidBaseAppTheme.PopupOverlay"
+            app:title = "扫一扫" />
+
+    </android.support.design.widget.AppBarLayout >
+
+
+    <FrameLayout
+        android:id = "@+id/flContainer"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        app:layout_behavior = "@string/appbar_scrolling_view_behavior" >
+        <FrameLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:background = "#ffffff" >
+
+            <com.journeyapps.barcodescanner.BarcodeView
+                android:id = "@+id/android_base_barcode_view"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                app:zxing_framing_rect_height = "300dp"
+                app:zxing_framing_rect_width = "300dp"/>
+
+            <com.zxing.view.CrosheViewFinderView
+                android:id = "@+id/android_base_finder_view"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent" />
+
+
+        </FrameLayout >
+
+
+        <com.flyco.roundview.RoundTextView
+            android:id = "@+id/android_base_scanner_album"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "bottom|center_horizontal"
+            android:layout_marginBottom = "40dp"
+            android:gravity = "center"
+            android:padding = "10dp"
+            android:text = "从相册中选择"
+            android:textColor = "#fff"
+            app:rv_backgroundColor = "@color/colorAccent"
+            app:rv_cornerRadius = "10dp" />
+
+    </FrameLayout >
+
+</android.support.design.widget.CoordinatorLayout >

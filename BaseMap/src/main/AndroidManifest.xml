@@ -1,0 +1,30 @@
+<manifest package = "com.croshe.base.map"
+          xmlns:android = "http://schemas.android.com/apk/res/android" >
+
+    <application
+    >
+        <activity android:name = ".activity.CrosheMapSelAddressActivity"
+                  android:screenOrientation = "nosensor"
+                  android:windowSoftInputMode = "adjustNothing"
+        >
+            <intent-filter >
+                <action android:name = "${applicationId}.CrosheMapSelAddressActivity" />
+                <action android:name = "${applicationId}.CrosheSelectLocationInMap" />
+                <category android:name = "android.intent.category.DEFAULT" />
+            </intent-filter >
+        </activity >
+
+        <activity android:name = ".activity.CrosheMapShowAddressActivity"
+                  android:screenOrientation = "nosensor"
+                  android:windowSoftInputMode = "adjustNothing"
+        >
+            <intent-filter >
+                <action android:name = "${applicationId}.CrosheMapShowAddressActivity" />
+                <action android:name = "${applicationId}.CrosheLocationInMapActivity" />
+                <category android:name = "android.intent.category.DEFAULT" />
+            </intent-filter >
+        </activity >
+
+    </application >
+
+</manifest >

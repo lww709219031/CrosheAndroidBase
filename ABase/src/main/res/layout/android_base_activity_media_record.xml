@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+             android:layout_width = "match_parent"
+             android:layout_height = "match_parent"
+             android:orientation = "vertical" >
+
+
+    <SurfaceView
+        android:id = "@+id/surfaceView"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent" />
+
+
+
+
+    <LinearLayout
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "bottom|center_horizontal"
+        android:orientation = "horizontal" >
+        <Button
+            android:id = "@+id/btnStart"
+            android:layout_width = "55dip"
+            android:layout_height = "wrap_content"
+            android:onClick="onClickByMedia"
+            android:text = "录制" />
+
+
+        <Button
+
+            android:id = "@+id/btnStop"
+            android:layout_width = "55dip"
+            android:layout_height = "wrap_content"
+            android:onClick="onClickByMedia"
+            android:text = "停止" />
+    </LinearLayout >
+</FrameLayout >

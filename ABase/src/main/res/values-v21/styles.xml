@@ -1,0 +1,17 @@
+<resources >
+
+    <style name = "AndroidBaseAppTheme"
+           parent = "Theme.AppCompat.Light.NoActionBar" >
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+        <item name = "android:colorBackgroundCacheHint" >@null</item >
+        <item name = "android:windowIsTranslucent" >true</item >
+
+        <item name = "windowActionBar" >false</item >
+        <item name = "windowNoTitle" >true</item >
+        <item name = "android:toolbarStyle" >@style/AndroidBaseToolbarStyle</item >
+        <item name = "toolbarStyle" >@style/AndroidBaseToolbarStyle</item >
+
+        <!--<item name = "android:textColorPrimary" >@color/colorTitle</item >-->
+        <!--<item name = "android:textColor">@color/colorTitle</item>-->
+    </style >
+</resources >

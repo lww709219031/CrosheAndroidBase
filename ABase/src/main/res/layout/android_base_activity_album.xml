@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AndroidBaseAppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/android_base_ic_close"
+            app:popupTheme="@style/AndroidBaseAppTheme.PopupOverlay"
+            app:titleMargins="0dp">
+
+            <LinearLayout
+                android:id="@+id/sllAlbumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCurrAlbumName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片"
+                        android:textColor="#fff"
+                        android:textSize="18dp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:src="@drawable/android_base_ic_right_down_delta"
+                        android:tint="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:minWidth="70dp">
+
+                    <TextView
+                        android:id="@+id/tvConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="确定"
+                        android:textColor="#fff"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#444"
+                android:scrollbars="vertical">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+            <FrameLayout
+                android:id="@+id/frameLayoutAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/viewback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#aa000000"
+                    android:clickable="true" />
+
+                <ScrollView
+                    android:id="@+id/scrollViewAlbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_gravity="top"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/llAlbums"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+                </ScrollView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="#BB383838"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llCamera"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/android_base_ic_camera" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="拍照"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/hScrollView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/llSelected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

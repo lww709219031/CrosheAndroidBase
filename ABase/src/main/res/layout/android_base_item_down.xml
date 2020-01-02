@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+             xmlns:app = "http://schemas.android.com/apk/res-auto"
+             android:layout_width = "match_parent"
+             android:layout_height = "wrap_content"
+             android:orientation = "horizontal" >
+
+
+    <FrameLayout android:id = "@+id/android_base_flDownload"
+                 android:layout_width = "match_parent"
+                 android:layout_height = "80dp"
+                 android:background = "#fff" >
+
+        <LinearLayout android:layout_width = "match_parent"
+                      android:layout_height = "match_parent"
+                      android:orientation = "vertical"
+                      android:paddingLeft = "60dp"
+                      android:gravity="center_vertical"
+                      android:paddingRight = "60dp" >
+            <TextView android:id = "@+id/android_base_tvName"
+                      android:layout_width = "match_parent"
+                      android:layout_height = "wrap_content"
+                      android:ellipsize = "middle"
+                      android:textSize="16dp"
+                      android:gravity = "left|center_vertical"
+                      android:text = "文件名称"
+                      android:maxLines="2"
+                      android:textColor = "#000" />
+
+            <TextView android:layout_width = "wrap_content"
+                      android:layout_height = "wrap_content"
+                      android:id="@+id/android_base_down_tip"
+                      android:layout_marginTop="5dp"
+                      android:textColor="#696969"
+                      android:text = "已暂停" />
+
+        </LinearLayout >
+        <FrameLayout android:id = "@+id/android_base_progress"
+                     android:layout_width = "0dp"
+                     android:layout_height = "match_parent"
+                     android:background = "@color/colorAccent"
+                     android:clipChildren = "true" >
+
+
+            <LinearLayout android:layout_width = "match_parent"
+                          android:layout_height = "match_parent"
+                          android:orientation = "vertical"
+                          android:paddingLeft = "60dp"
+                          android:id="@+id/andorid_base_llMask"
+                          android:gravity="center_vertical"
+                          android:paddingRight = "60dp" >
+                <TextView android:id = "@+id/android_base_tvName2"
+                          android:layout_width = "match_parent"
+                          android:layout_height = "wrap_content"
+                          android:ellipsize = "middle"
+                          android:textSize="16dp"
+                          android:maxLines="2"
+                          android:gravity = "left|center_vertical"
+                          android:text = "文件名称"
+                          android:textColor = "#fff" />
+
+                <TextView android:layout_width = "wrap_content"
+                          android:layout_height = "wrap_content"
+                          android:id="@+id/android_base_down_tip2"
+                          android:layout_marginTop="5dp"
+                          android:textColor="#f0f0f0"
+                          android:text = "已暂停" />
+
+            </LinearLayout >
+        </FrameLayout >
+
+        <View android:id = "@+id/android_base_down"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:background = "?selectableItemBackground"
+              android:clickable = "true" />
+
+    </FrameLayout >
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id = "@+id/android_base_file_icon"
+        android:layout_width = "40dp"
+        android:layout_height = "40dp"
+        android:layout_gravity = "left|center_vertical"
+        android:layout_margin = "10dp"
+        android:scaleType = "centerCrop"
+        android:src = "@drawable/android_base_default_img" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id = "@+id/android_base_down_icon"
+        android:layout_width = "20dp"
+        android:layout_height = "20dp"
+        android:layout_gravity = "right|center_vertical"
+        android:layout_margin = "10dp"
+        android:src = "@drawable/android_base_icon_down"
+        android:tint = "@color/colorAccent" />
+
+
+</FrameLayout >

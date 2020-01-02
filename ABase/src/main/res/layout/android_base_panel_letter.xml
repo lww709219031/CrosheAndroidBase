@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+             android:layout_width = "match_parent"
+             android:layout_height = "match_parent"
+             android:orientation = "vertical" >
+
+    <com.croshe.android.base.views.list.CrosheSwipeRefreshRecyclerView
+        android:id = "@+id/android_base_crosheRecyclerView"
+        android:layout_width = "match_parent"
+        android:background="#f0f0f0"
+        android:layout_height = "match_parent" >
+
+    </com.croshe.android.base.views.list.CrosheSwipeRefreshRecyclerView >
+
+    <com.croshe.android.base.views.control.CrosheWaveSideBarView
+        android:id = "@+id/android_base_waveSideBar"
+        android:layout_width = "wrap_content"
+        android:layout_height = "match_parent" />
+
+</FrameLayout >

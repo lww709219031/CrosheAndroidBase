@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name = "AndroidBaseAppTheme" parent = "Theme.AppCompat.Light.NoActionBar" >
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+        <item name = "android:colorBackgroundCacheHint" >@null</item >
+        <item name = "android:windowIsTranslucent" >true</item >
+
+        <item name = "windowActionBar" >false</item >
+        <item name = "windowNoTitle" >true</item >
+
+        <item name = "toolbarStyle" >@style/AndroidBaseToolbarStyle</item >
+    </style >
+
+    <style name = "AndroidBaseAppTheme.AppBarOverlay"
+           parent = "ThemeOverlay.AppCompat.Dark.ActionBar" >
+    </style>
+    <style name = "AndroidBaseAppTheme.PopupOverlay"
+           parent = "ThemeOverlay.AppCompat.Light" />
+
+    <style name="customerToolbarTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorControlNormal" tools:ignore="NewApi">#fff</item>
+        <!--这个也正确,用这个吧-->
+        <item name="colorControlNormal">#fff</item>
+
+    </style>
+
+    <style name = "AndroidBaseToolbarStyle"
+           parent = "Widget.AppCompat.Toolbar" >
+        <item name = "android:scaleType" >centerInside</item >
+        <item name = "titleMargin" >0dp</item >
+        <item name = "contentInsetStartWithNavigation" >0dp</item >
+        <item name = "titleTextAppearance" >@style/AndroidBaseToolbarStyle.Title</item >
+        <item name = "subtitleTextAppearance" >@style/AndroidBaseToolbarStyle.Subtitle</item >
+
+    </style >
+
+
+    <style name = "AndroidBaseToolbarStyle.Subtitle" >
+        <item name = "android:textSize" >12dp</item >
+        <item name = "android:textColor" >@color/colorSubTitle</item >
+    </style >
+
+    <style name = "AndroidBaseToolbarStyle.Title" >
+        <item name = "android:textSize" >20dp</item >
+        <item name = "android:textColor" >@color/colorTitle</item >
+    </style >
+
+    <style name = "AndroidBaseDialogStyleA" >
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+        <item name = "android:windowFrame" >@null</item >
+        <item name = "android:windowNoTitle" >true</item >
+        <item name = "android:windowIsFloating" >true</item >
+        <item name = "android:windowIsTranslucent" >true</item >
+        <item name = "android:windowContentOverlay" >@null</item >
+        <item name = "android:backgroundDimEnabled" >true</item >
+    </style >
+
+
+    <style name = "AndroidBaseDialogStyleB" >
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+        <item name = "android:windowFrame" >@null</item >
+        <item name = "android:windowNoTitle" >true</item >
+        <item name = "android:windowIsFloating" >true</item >
+        <item name = "android:windowIsTranslucent" >false</item >
+        <item name = "android:windowContentOverlay" >@null</item >
+        <item name = "android:backgroundDimEnabled" >false</item >
+    </style >
+
+
+    <declare-styleable name="CrosheCircleProgressView">
+        <attr name="cpv_progressNormalColor" format="color"/>
+        <attr name="cpv_progressReachColor" format="color"/>
+        <attr name="cpv_progressTextColor" format="color"/>
+        <attr name="cpv_progressTextSize" format="dimension"/>
+        <attr name="cpv_progressTextOffset" format="dimension"/>
+        <attr name="cpv_progressNormalSize" format="dimension"/>
+        <attr name="cpv_progressReachSize" format="dimension"/>
+        <attr name="cpv_radius" format="dimension"/>
+        <attr name="cpv_progressTextVisible" format="boolean"/>
+        <attr name="cpv_progressStartArc" format="integer"/>
+        <attr name="cpv_progressTextSkewX" format="dimension"/>
+        <attr name="cpv_progressTextPrefix" format="string"/>
+        <attr name="cpv_progressTextSuffix" format="string"/>
+        <attr name="cpv_innerBackgroundColor" format="color"/>
+        <attr name="cpv_progressStyle" format="enum">
+            <enum name="Normal" value="0"/>
+            <enum name="FillInner" value="1"/>
+            <enum name="FillInnerArc" value="2"/>
+        </attr>
+        <attr name="cpv_innerProgressColor" format="color"/>
+        <attr name="cpv_innerPadding" format="dimension"/>
+        <attr name="cpv_outerColor" format="color"/>
+        <attr name="cpv_outerSize" format="dimension"/>
+        <attr name="cpv_reachCapRound" format="boolean"/>
+    </declare-styleable>
+
+
+</resources >

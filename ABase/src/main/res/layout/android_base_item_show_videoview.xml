@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+             android:layout_width = "match_parent"
+             android:layout_height = "match_parent"
+             android:orientation = "vertical" >
+
+    <FrameLayout android:layout_width = "match_parent"
+                 android:layout_height = "match_parent" >
+        <com.croshe.android.base.views.control.CrosheVideoView
+            android:id = "@+id/android_base_videoView"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:keepScreenOn="true"
+            android:layout_gravity = "center" />
+
+        <uk.co.senab.photoview.PhotoView
+            android:id = "@+id/android_base_imgThumb"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_gravity = "center" />
+
+        <FrameLayout
+            android:id = "@+id/android_base_flVideoPlay"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:clickable = "true" >
+            <ImageView
+                android:id = "@+id/imgPlay"
+                android:layout_width = "50dp"
+                android:layout_height = "50dp"
+                android:layout_gravity = "center"
+                android:src = "@drawable/android_base_ic_play" />
+        </FrameLayout >
+
+        <ProgressBar
+            android:id = "@+id/android_base_tvProgress"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:visibility = "gone" />
+    </FrameLayout >
+
+
+</FrameLayout >
